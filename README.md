@@ -17,7 +17,7 @@
 ### 📈 Activity & Telemetry
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=emkafie&bg_color=15141A&color=B08D57&line=B08D57&point=F5F1E8&area=true&area_color=B08D57&hide_border=true&custom_title=Commit%20Cadence%20%26%20Frequency" alt="Commit Frequency Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=emkafie&bg_color=15141A&color=B08D57&line=B08D57&point=F5F1E8&area=true&area_color=B08D57&hide_border=true&custom_title=Commit%20Cadence%20and%20Frequency" alt="Commit Frequency Graph" width="100%" />
 </p>
 
 <p align="center">
