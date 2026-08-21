@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" width="100%" height="100%">
+  <defs>
+    <!-- Neoclassic Typography: Playfair Display, DM Sans, DM Mono -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap');
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .font-display {
+        font-family: 'Playfair Display', Georgia, serif;
+      }
+      .font-sans {
+        font-family: 'DM Sans', -apple-system, system-ui, sans-serif;
+      }
+      .font-mono {
+        font-family: 'DM Mono', monospace;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* 3D Celestial & Axonometric Motion */
+      @keyframes armillary-spin-1 {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes armillary-spin-2 {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes poly-float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-4px) rotate(1.5deg); }
+      }
+      @keyframes pulse-subtle {
+        0%, 100% { opacity: 0.75; }
+        50% { opacity: 1; }
+      }
+      @keyframes sweep-line {
+        0% { opacity: 0; transform: translateY(-30px); }
+        20% { opacity: 0.4; }
+        80% { opacity: 0.4; }
+        100% { opacity: 0; transform: translateY(180px); }
+      }
+
+      .poly-group {
+        animation: poly-float 8s ease-in-out infinite;
+        transform-origin: 730px 140px;
+      }
+      .ring-meridian {
+        animation: armillary-spin-1 28s linear infinite;
+        transform-origin: 730px 140px;
+      }
+      .ring-equator {
+        animation: armillary-spin-2 20s linear infinite;
+        transform-origin: 730px 140px;
+      }
+      .ring-oblique {
+        animation: armillary-spin-1 16s linear infinite;
+        transform-origin: 730px 140px;
+      }
+      .spec-sweep {
+        animation: sweep-line 6s ease-in-out infinite;
+      }
+      .live-dot {
+        animation: pulse-subtle 2.4s ease-in-out infinite;
+      }
+    </style>
+
+    <!-- Bronze Architectural Gradients -->
+    <linearGradient id="bronze-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B08D57" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#B08D57" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#B08D57" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="poly-face-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B08D57" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#B08D57" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <linearGradient id="poly-face-2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B08D57" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#B08D57" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Architectural Grid Pattern -->
+    <pattern id="arch-grid" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#B08D57" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- ============================================================= -->
+  <!-- FOUNDATION: MARBLE & LEDGER CHARCOAL SHELL (2px RADIUS)       -->
+  <!-- ============================================================= -->
+  <rect x="1" y="1" width="918" height="278" rx="2" fill="#15141A" stroke="rgba(176,141,87,0.28)" stroke-width="1"/>
+  
+  <!-- Subtle Architectural Grid Fill -->
+  <rect x="1" y="1" width="918" height="278" rx="2" fill="url(#arch-grid)"/>
+
+  <!-- Inner Architectural Hairline Border -->
+  <rect x="10" y="10" width="900" height="260" rx="1" fill="none" stroke="rgba(176,141,87,0.14)" stroke-width="1"/>
+
+  <!-- Precision Corner Registration Crosshairs (+) -->
+  <g stroke="#B08D57" stroke-width="0.8" opacity="0.65">
+    <!-- Top Left -->
+    <path d="M 6 10 H 14 M 10 6 V 14"/>
+    <!-- Top Right -->
+    <path d="M 906 10 H 914 M 910 6 V 14"/>
+    <!-- Bottom Left -->
+    <path d="M 6 270 H 14 M 10 266 V 274"/>
+    <!-- Bottom Right -->
+    <path d="M 906 270 H 914 M 910 266 V 274"/>
+    <!-- Center Dividing Crosshairs -->
+    <path d="M 570 6 V 14 M 566 10 H 574"/>
+    <path d="M 570 266 V 274 M 566 270 H 574"/>
+  </g>
+
+  <!-- Vertical Hairline Column Divider (Swiss Grid Split: 570px) -->
+  <line x1="570" y1="10" x2="570" y2="270" stroke="rgba(176,141,87,0.24)" stroke-width="1"/>
+
+  <!-- ============================================================= -->
+  <!-- LEFT COLUMN: EDITORIAL & LEDGER HIERARCHY                     -->
+  <!-- ============================================================= -->
+  <g transform="translate(38, 30)">
+    
+    <!-- Eyebrow: 19th-Century Academy / Systems Kicker -->
+    <text class="font-sans" x="0" y="10" font-size="10.5" fill="#9A9080" letter-spacing="0.12em" font-weight="500">
+      ACADEMY OF SYSTEMS &amp; TELEMETRY — VOL. IV · FOLIO 2026
+    </text>
+
+    <!-- Top Rule Line -->
+    <line x1="0" y1="20" x2="495" y2="20" stroke="rgba(176,141,87,0.22)" stroke-width="1"/>
+
+    <!-- Hero Display Title: Playfair Display with Bronze Emphasis -->
+    <g transform="translate(0, 54)">
+      <text class="font-display" x="0" y="0" font-size="34" fill="#F5F1E8" font-weight="600" letter-spacing="-0.02em">
+        emkafie
+      </text>
+      <text class="font-mono" x="145" y="-6" font-size="10.5" fill="#B08D57" letter-spacing="0.08em">
+        [SPEC // N° 0x4B]
+      </text>
+
+      <!-- Authority Subtitle with Italic Bronze Accent -->
+      <text class="font-display" x="0" y="28" font-size="16" fill="#F5F1E8" font-weight="500" letter-spacing="-0.01em">
+        The discipline of software <tspan fill="#B08D57" font-style="italic" font-weight="400">that watches hardware.</tspan>
+      </text>
+    </g>
+
+    <!-- Secondary Hairline Rule -->
+    <line x1="0" y1="116" x2="495" y2="116" stroke="rgba(176,141,87,0.22)" stroke-width="1"/>
+
+    <!-- Ledger Table Layout (Precision 3-Column Specifications) -->
+    <g transform="translate(0, 134)">
+      
+      <!-- Entry I: Scope / Focus -->
+      <g transform="translate(0, 0)">
+        <text class="font-sans" x="0" y="0" font-size="9.5" fill="#9A9080" letter-spacing="0.1em" font-weight="500">
+          I. PRIMARY FOCUS
+        </text>
+        <text class="font-mono" x="0" y="16" font-size="11.5" fill="#F5F1E8" font-weight="400">
+          Anomaly Detection &amp; IoT
+        </text>
+        <text class="font-mono" x="0" y="30" font-size="10" fill="#9A9080">
+          Cross-sensor audit engines
+        </text>
+      </g>
+
+      <!-- Vertical Sub-divider -->
+      <line x1="172" y1="-4" x2="172" y2="40" stroke="rgba(176,141,87,0.18)" stroke-width="0.8"/>
+
+      <!-- Entry II: Systems / Artifacts -->
+      <g transform="translate(186, 0)">
+        <text class="font-sans" x="0" y="0" font-size="9.5" fill="#9A9080" letter-spacing="0.1em" font-weight="500">
+          II. ACTIVE SYSTEMS
+        </text>
+        <text class="font-mono" x="0" y="16" font-size="11.5" fill="#B08D57" font-weight="500">
+          GreenTrace · P-IOT
+        </text>
+        <text class="font-mono" x="0" y="30" font-size="10" fill="#9A9080">
+          Mission-critical dashboards
+        </text>
+      </g>
+
+      <!-- Vertical Sub-divider -->
+      <line x1="346" y1="-4" x2="346" y2="40" stroke="rgba(176,141,87,0.18)" stroke-width="0.8"/>
+
+      <!-- Entry III: Telemetry State -->
+      <g transform="translate(360, 0)">
+        <text class="font-sans" x="0" y="0" font-size="9.5" fill="#9A9080" letter-spacing="0.1em" font-weight="500">
+          III. CORE STATUS
+        </text>
+        <g transform="translate(0, 14)">
+          <circle class="live-dot" cx="4" cy="-3" r="3" fill="#B08D57"/>
+          <text class="font-mono" x="12" y="1" font-size="11.5" fill="#F5F1E8" font-weight="400">
+            NOMINAL
+          </text>
+        </g>
+        <text class="font-mono" x="0" y="30" font-size="10" fill="#9A9080">
+          LATENCY: 0.40ms
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Structural Monospace Notation -->
+    <g transform="translate(0, 196)">
+      <line x1="0" y1="0" x2="495" y2="0" stroke="rgba(176,141,87,0.22)" stroke-width="1"/>
+      <text class="font-mono" x="0" y="15" font-size="9.5" fill="#6B6456" letter-spacing="0.04em">
+        LEDGER REF: <tspan fill="#9A9080">0x7E4.AXIS</tspan> — ARCH: <tspan fill="#9A9080">EVENT-DRIVEN / MQTT / WEBSOCKETS</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- RIGHT COLUMN: 3D AXONOMETRIC ARMILLARY & POLYHEDRON           -->
+  <!-- ============================================================= -->
+  
+  <!-- Architectural Figure Label (Top Right) -->
+  <g transform="translate(594, 28)">
+    <text class="font-sans" x="0" y="10" font-size="10" fill="#9A9080" letter-spacing="0.12em" font-weight="500">
+      FIG. 3D — AXONOMETRIC PROJECTION
+    </text>
+    <text class="font-mono" x="236" y="10" font-size="9.5" fill="#B08D57" text-anchor="end">
+      θ: 38.4° · φ: 14.2°
+    </text>
+    <line x1="0" y1="18" x2="236" y2="18" stroke="rgba(176,141,87,0.2)" stroke-width="0.8"/>
+  </g>
+
+  <!-- Center of 3D Armillary: (715, 148) -->
+  <g class="poly-group">
+
+    <!-- Subtle Architectural Scanning Grid Horizon -->
+    <g stroke="#B08D57" stroke-width="0.6" stroke-opacity="0.15">
+      <!-- Axis Lines -->
+      <line x1="600" y1="148" x2="830" y2="148" stroke-dasharray="3 3"/>
+      <line x1="715" y1="42" x2="715" y2="254" stroke-dasharray="3 3"/>
+      <!-- Diagonal Axonometric Rulers -->
+      <line x1="630" y1="200" x2="800" y2="96" stroke-dasharray="2 4"/>
+    </g>
+
+    <!-- Outer Celestial Meridian Ring (Armillary Ring 1) -->
+    <g class="ring-meridian">
+      <ellipse cx="715" cy="148" rx="82" ry="82" fill="none" stroke="#B08D57" stroke-width="0.8" stroke-opacity="0.25" stroke-dasharray="6 4"/>
+      <!-- Meridian Dial Graduations -->
+      <circle cx="715" cy="66" r="2" fill="#B08D57"/>
+      <circle cx="715" cy="230" r="2" fill="#B08D57"/>
+      <circle cx="633" cy="148" r="2" fill="#B08D57"/>
+      <circle cx="797" cy="148" r="2" fill="#B08D57"/>
+    </g>
+
+    <!-- Equator Ellipse (Armillary Ring 2) -->
+    <g class="ring-equator">
+      <ellipse cx="715" cy="148" rx="86" ry="32" fill="none" stroke="#B08D57" stroke-width="1" stroke-opacity="0.45"/>
+      <!-- Coordinate Nodes -->
+      <circle cx="801" cy="148" r="2.5" fill="#B08D57"/>
+      <circle cx="629" cy="148" r="2.5" fill="#B08D57"/>
+      <circle cx="715" cy="116" r="1.5" fill="#9A9080"/>
+      <circle cx="715" cy="180" r="1.5" fill="#9A9080"/>
+    </g>
+
+    <!-- Oblique Polar Ring (Armillary Ring 3) -->
+    <g class="ring-oblique">
+      <ellipse cx="715" cy="148" rx="34" ry="86" fill="none" stroke="#B08D57" stroke-width="0.9" stroke-opacity="0.3" stroke-dasharray="12 6"/>
+      <circle cx="715" cy="62" r="2.5" fill="#F5F1E8" opacity="0.8"/>
+    </g>
+
+    <!-- ======================================================= -->
+    <!-- 3D ARCHIMEDEAN / ISOMETRIC POLYHEDRON (DA VINCI WIRE)   -->
+    <!-- Center: (715, 148), Radius: 42                          -->
+    <!-- ======================================================= -->
+    <g stroke-linecap="round" stroke-linejoin="round">
+      
+      <!-- Back Isometric Faces (Subtle Warm Tint) -->
+      <polygon points="715,108 750,128 715,148 680,128" fill="url(#poly-face-1)" stroke="rgba(176,141,87,0.3)" stroke-width="0.8" stroke-dasharray="2 3"/>
+      
+      <!-- Bottom Left Face -->
+      <polygon points="680,128 715,148 715,188 680,168" fill="url(#poly-face-2)" stroke="#B08D57" stroke-width="1.2" stroke-opacity="0.75"/>
+      
+      <!-- Bottom Right Face -->
+      <polygon points="715,148 750,128 750,168 715,188" fill="url(#poly-face-1)" stroke="#B08D57" stroke-width="1.2" stroke-opacity="0.85"/>
+      
+      <!-- Top Left Isometric Face -->
+      <polygon points="715,108 680,128 680,168 715,148" fill="none" stroke="#B08D57" stroke-width="1.3"/>
+      
+      <!-- Top Right Isometric Face -->
+      <polygon points="715,108 750,128 750,168 715,148" fill="none" stroke="#B08D57" stroke-width="1.3"/>
+
+      <!-- Inner da Vinci Octahedral Struts -->
+      <line x1="715" y1="108" x2="715" y2="188" stroke="#B08D57" stroke-width="1" stroke-opacity="0.5"/>
+      <line x1="680" y1="128" x2="750" y2="168" stroke="#B08D57" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="3 3"/>
+      <line x1="680" y1="168" x2="750" y2="128" stroke="#B08D57" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="3 3"/>
+
+      <!-- Precision Vertices (Crisp Bronze & Ivory Nodes) -->
+      <circle cx="715" cy="108" r="3" fill="#F5F1E8" stroke="#B08D57" stroke-width="1"/>
+      <circle cx="680" cy="128" r="2.5" fill="#B08D57"/>
+      <circle cx="750" cy="128" r="2.5" fill="#B08D57"/>
+      <circle cx="715" cy="148" r="3.5" fill="#B08D57"/>
+      <circle cx="715" cy="148" r="1.5" fill="#F5F1E8"/>
+      <circle cx="680" cy="168" r="2.5" fill="#B08D57"/>
+      <circle cx="750" cy="168" r="2.5" fill="#B08D57"/>
+      <circle cx="715" cy="188" r="3" fill="#F5F1E8" stroke="#B08D57" stroke-width="1"/>
+    </g>
+
+    <!-- Inner Armillary Ring Axis -->
+    <ellipse cx="715" cy="148" rx="22" ry="22" fill="none" stroke="#B08D57" stroke-width="0.7" stroke-dasharray="2 4" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Architectural Quadrant Dial Footnotes (Bottom Right) -->
+  <g transform="translate(594, 240)">
+    <line x1="0" y1="0" x2="236" y2="0" stroke="rgba(176,141,87,0.2)" stroke-width="0.8"/>
+    <text class="font-mono" x="0" y="14" font-size="9" fill="#9A9080">
+      QUADRANT: <tspan fill="#F5F1E8">I · II · III · IV</tspan>
+    </text>
+    <text class="font-mono" x="236" y="14" font-size="9" fill="#B08D57" text-anchor="end">
+      BEAUX-ARTS // SPEC 01
+    </text>
+  </g>
+</svg>
