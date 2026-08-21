@@ -1,93 +1,71 @@
 <p align="center">
-  <img src="./assets/header-3d.svg" alt="emkafie // 3D Systems Telemetry Header" width="100%" />
+  <img src="https://raw.githubusercontent.com/emkafie/emkafie/main/assets/header-3d.svg" alt="emkafie // Neoclassic 3D Architecture Header" width="100%" />
 </p>
 
 ---
 
-## 📡 Signal Card
+### ⚙️ Stack
 
 <p align="center">
-  <a href="https://github.com/emkafie">
-    <img src="https://githubcard.com/api/profile?username=emkafie&theme=auto&show=stars,repos,commits,streak&hide=issues,prs&font=JetBrains%20Mono" alt="emkafie's GitHub Profile Card" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,react,nextjs,go,python,c,cpp,tailwind,postgres,docker,git,linux&theme=dark" alt="Tech Stack" />
   </a>
 </p>
 
 ---
 
-## ⚙️ Stack
+### 🧭 Systems & Artifacts
 
-> _Tools I reach for when the system must not lie._
-
-<p align="center">
-  <img src="./metrics.topics.svg" alt="Starred Topics" title="Topics I've starred on GitHub" />
-</p>
-
----
-
-## 🧭 Before You Browse
-
-> _My repos cluster around one theme: **software that watches hardware**._
-
-1. **Production monitoring systems** → [`GreenTrace`](https://github.com/emkafie/GreenTrace) — incident/anomaly platform with RBAC, audit, deployment docs
-2. **IoT dashboards with teeth** → [`P-IOT (pbl-chaos)`](https://github.com/emkafie/pbl-chaos) — Y2K cyberpunk parking system, cross-sensor anomaly engine, gate control, time-warp sim
-3. **Experiments & spikes** → everything else — expect rough edges, incomplete ideas, learning artifacts
-4. **Templates / forks** → [`QuizUp`](https://github.com/emkafie/QuizUp) — React Router template (not original work)
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=emkafie&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=emkafie&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</p>
-
----
-
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=emkafie&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
-</p>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🏛️ <a href="https://github.com/emkafie/GreenTrace">GreenTrace</a></h4>
+      <p><em>Production Monitoring &amp; Anomaly Platform</em></p>
+      <p>Incident &amp; anomaly detection platform with role-based access control, structured audit trails, and deployment specs.</p>
+      <sub><code>Go</code> · <code>TypeScript</code> · <code>Next.js</code> · <code>Telemetry</code></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🛰️ <a href="https://github.com/emkafie/pbl-chaos">P-IOT (pbl-chaos)</a></h4>
+      <p><em>IoT Telemetry &amp; Cross-Sensor Engine</em></p>
+      <p>Smart parking telemetry platform, barrier gate control protocols, cross-sensor anomaly engine, and time-warp simulator.</p>
+      <sub><code>C++</code> · <code>MQTT</code> · <code>WebSockets</code> · <code>React</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>📐 <a href="https://github.com/emkafie/NeoClassic-UI-template">NeoClassic UI</a></h4>
+      <p><em>Marble &amp; Ledger Design System</em></p>
+      <p>19th-century academy precision and Swiss grid discipline. 48 Radix + Tailwind v4 components with hairline bronze rules.</p>
+      <sub><code>React</code> · <code>Tailwind v4</code> · <code>Design System</code></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🧪 <a href="https://github.com/emkafie/QuizUp">QuizUp &amp; Spikes</a></h4>
+      <p><em>Templates, Explorations &amp; Bridges</em></p>
+      <p>React Router templates, hardware-software bridges, sensor prototypes, and exploratory systems.</p>
+      <sub><code>React Router</code> · <code>Hardware Bridges</code> · <code>Prototypes</code></sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🗓️ Commit Calendar (Isometric)
+### 📡 Live Telemetry
 
-<p align="center">
-  <img src="./metrics.isocalendar.svg" alt="Isometric Commit Calendar" title="Last year of contributions" width="100%" />
-</p>
-
----
-
-## 🎼 Now Playing
-
-<p align="center">
-  <img src="./metrics.music.svg" alt="Recently played tracks" title="Recently played on Last.fm" />
-</p>
-
----
-
-## 📡 Connect
-
-<p align="center">
-  <a href="https://twitter.com/yourhandle"><img src="https://img.shields.io/badge/@yourhandle-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" /></a>
-  <a href="https://linkedin.com/in/yourhandle"><img src="https://img.shields.io/badge/yourname-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://yourblog.dev"><img src="https://img.shields.io/badge/blog-FF6B6B?style=for-the-badge&logo=readme&logoColor=white" alt="Blog" /></a>
-  <a href="mailto:you@domain.com"><img src="https://img.shields.io/badge/email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://discord.gg/yourserver"><img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-</p>
-
----
-
-## 👀 Profile Views
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=emkafie&color=00FF88&style=for-the-badge" alt="Profile Views" />
-</p>
+<table>
+  <tr>
+    <td width="60%" valign="top" align="center">
+      <p align="left"><strong>🗓️ Contribution Cadence (Isometric)</strong></p>
+      <img src="./metrics.isocalendar.svg" alt="Isometric Commit Calendar" width="100%" />
+    </td>
+    <td width="40%" valign="top" align="center">
+      <p align="left"><strong>🎼 Now Playing (Last.fm)</strong></p>
+      <img src="./metrics.music.svg" alt="Recently Played Music" width="100%" />
+    </td>
+  </tr>
+</table>
 
 ---
 
 <p align="center">
-  <sub>Built with intention. <a href="https://github.com/emkafie/emkafie">View source</a> · Systems: <a href="https://github.com/emkafie/GreenTrace">GreenTrace</a> · <a href="https://github.com/emkafie/pbl-chaos">P-IOT</a> · <a href="https://parking-iot-ashen.vercel.app">Live P-IOT</a></sub>
+  <sub>Built with intention. <a href="https://github.com/emkafie/emkafie">View source</a> · Systems: <a href="https://github.com/emkafie/GreenTrace">GreenTrace</a> · <a href="https://github.com/emkafie/pbl-chaos">P-IOT</a> · <a href="https://github.com/emkafie/NeoClassic-UI-template">NeoClassic UI</a></sub>
 </p>
