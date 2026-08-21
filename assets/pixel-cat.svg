@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 70" width="100%" height="70">
+  <defs>
+    <style>
+      .font-mono {
+        font-family: 'DM Mono', 'SF Mono', Consolas, monospace;
+      }
+
+      /* Walking Cat Animation */
+      @keyframes cat-walk {
+        0% { transform: translateX(10px); }
+        48% { transform: translateX(380px) scaleX(1); }
+        50% { transform: translateX(380px) scaleX(-1); }
+        98% { transform: translateX(10px) scaleX(-1); }
+        100% { transform: translateX(10px) scaleX(1); }
+      }
+
+      @keyframes leg-front {
+        0%, 100% { transform: rotate(18deg); }
+        50% { transform: rotate(-18deg); }
+      }
+      @keyframes leg-back {
+        0%, 100% { transform: rotate(-18deg); }
+        50% { transform: rotate(18deg); }
+      }
+      @keyframes tail-swish {
+        0%, 100% { transform: rotate(-12deg); }
+        50% { transform: rotate(16deg); }
+      }
+      @keyframes ear-twitch {
+        0%, 90%, 100% { transform: rotate(0deg); }
+        95% { transform: rotate(-10deg); }
+      }
+
+      .cat-container {
+        animation: cat-walk 18s ease-in-out infinite;
+        transform-origin: 20px 30px;
+      }
+      .cat-tail {
+        animation: tail-swish 1.4s ease-in-out infinite;
+        transform-origin: 6px 36px;
+      }
+      .leg-f {
+        animation: leg-front 0.6s linear infinite;
+        transform-origin: 32px 42px;
+      }
+      .leg-b {
+        animation: leg-back 0.6s linear infinite;
+        transform-origin: 14px 42px;
+      }
+      .ear {
+        animation: ear-twitch 3s ease-in-out infinite;
+        transform-origin: 36px 22px;
+      }
+    </style>
+  </defs>
+
+  <!-- Hairline Bronze Ledger Beam -->
+  <line x1="10" y1="52" x2="470" y2="52" stroke="#B08D57" stroke-opacity="0.35" stroke-width="1"/>
+  <circle cx="10" cy="52" r="2" fill="#B08D57" opacity="0.6"/>
+  <circle cx="470" cy="52" r="2" fill="#B08D57" opacity="0.6"/>
+
+  <!-- Architectural Label -->
+  <text class="font-mono" x="460" y="64" font-size="8.5" fill="#9A9080" text-anchor="end" letter-spacing="0.5">
+    SYSTEM_COMPANION // N° 09
+  </text>
+
+  <!-- Pixel Cat Character -->
+  <g class="cat-container">
+    
+    <!-- Shadow on beam -->
+    <ellipse cx="24" cy="52" rx="16" ry="2" fill="#B08D57" opacity="0.18"/>
+
+    <!-- Tail -->
+    <g class="cat-tail">
+      <path d="M 10 38 Q 2 34 2 24 Q 4 18 8 20" fill="none" stroke="#B08D57" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="8" cy="20" r="1.5" fill="#F5F1E8"/>
+    </g>
+
+    <!-- Hind Legs -->
+    <g class="leg-b">
+      <line x1="14" y1="42" x2="11" y2="52" stroke="#B08D57" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="18" y1="42" x2="16" y2="52" stroke="#9A9080" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Main Body -->
+    <rect x="12" y="30" width="22" height="14" rx="6" fill="#1D1C23" stroke="#B08D57" stroke-width="1.2"/>
+    <path d="M 16 34 Q 22 32 28 34" stroke="#B08D57" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+    <!-- Front Legs -->
+    <g class="leg-f">
+      <line x1="28" y1="42" x2="31" y2="52" stroke="#B08D57" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="33" y1="42" x2="35" y2="52" stroke="#9A9080" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Head & Ears -->
+    <g transform="translate(30, 22)">
+      <!-- Head Base -->
+      <circle cx="7" cy="8" r="7.5" fill="#1D1C23" stroke="#B08D57" stroke-width="1.2"/>
+      
+      <!-- Ears -->
+      <g class="ear">
+        <polygon points="2,3 0,-3 5,1" fill="#B08D57"/>
+        <polygon points="8,1 12,-3 12,3" fill="#B08D57"/>
+      </g>
+      
+      <!-- Eyes (Ivory Glow) -->
+      <circle cx="6" cy="7" r="1.2" fill="#F5F1E8"/>
+      <circle cx="10" cy="7" r="1.2" fill="#F5F1E8"/>
+
+      <!-- Nose & Whiskers -->
+      <circle cx="9" cy="10" r="0.8" fill="#B08D57"/>
+      <line x1="10" y1="10" x2="16" y2="8.5" stroke="#9A9080" stroke-width="0.6"/>
+      <line x1="10" y1="11" x2="15" y2="12.5" stroke="#9A9080" stroke-width="0.6"/>
+    </g>
+
+    <!-- Little Thought / Sparkle bubble -->
+    <circle cx="46" cy="14" r="1.5" fill="#B08D57" opacity="0.7"/>
+    <circle cx="50" cy="10" r="2.2" fill="#F5F1E8" opacity="0.85"/>
+  </g>
+</svg>
