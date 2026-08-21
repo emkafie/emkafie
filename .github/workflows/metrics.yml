@@ -17,7 +17,7 @@ jobs:
     steps:
 
       # ─────────────────────────────────────────────────────────
-      # Isometric commit calendar (full year)
+      # Isometric commit calendar (Marble & Ledger Theme)
       # ─────────────────────────────────────────────────────────
       - uses: lowlighter/metrics@latest
         with:
@@ -27,9 +27,36 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          config_timezone: Asia/Jakarta
+          extra_css: |
+            :root {
+              --color-calendar-graph-day-bg: #252430 !important;
+              --color-calendar-graph-day-border: rgba(176, 141, 87, 0.25) !important;
+              --color-calendar-graph-day-L1-bg: #4A3F2C !important;
+              --color-calendar-graph-day-L2-bg: #7A633D !important;
+              --color-calendar-graph-day-L3-bg: #B08D57 !important;
+              --color-calendar-graph-day-L4-bg: #F5F1E8 !important;
+            }
+            svg {
+              background-color: #15141A !important;
+              color: #9A9080 !important;
+              border: 1px solid rgba(176, 141, 87, 0.28) !important;
+              border-radius: 2px !important;
+            }
+            h2, h3 {
+              color: #B08D57 !important;
+              font-family: 'Playfair Display', Georgia, serif !important;
+            }
+            .field svg {
+              fill: #B08D57 !important;
+            }
+            .field {
+              color: #9A9080 !important;
+              font-family: 'DM Mono', monospace !important;
+            }
 
       # ─────────────────────────────────────────────────────────
-      # Music — recently listened tracks (Last.fm)
+      # Music — recently listened tracks (Marble & Ledger Theme)
       # ─────────────────────────────────────────────────────────
       - uses: lowlighter/metrics@latest
         with:
@@ -44,3 +71,28 @@ jobs:
           plugin_music_mode: recent
           plugin_music_limit: 4
           plugin_music_played_at: yes
+          extra_css: |
+            svg {
+              background-color: #15141A !important;
+              color: #9A9080 !important;
+              border: 1px solid rgba(176, 141, 87, 0.28) !important;
+              border-radius: 2px !important;
+            }
+            h2, h3 {
+              color: #B08D57 !important;
+              font-family: 'Playfair Display', Georgia, serif !important;
+            }
+            .name, .track {
+              color: #F5F1E8 !important;
+              font-family: 'DM Sans', sans-serif !important;
+            }
+            .artist {
+              color: #B08D57 !important;
+            }
+            .field svg {
+              fill: #B08D57 !important;
+            }
+            .time, .date {
+              color: #6B6456 !important;
+              font-family: 'DM Mono', monospace !important;
+            }
