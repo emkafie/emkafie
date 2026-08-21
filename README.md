@@ -30,11 +30,11 @@
 
 <table>
   <tr>
-    <td width="60%" valign="top" align="center">
+    <td width="50%" valign="top" align="center">
       <p align="left"><strong>🗓️ Isometric Contribution Cadence</strong></p>
       <img src="./metrics.isocalendar.svg" alt="Isometric Commit Calendar" width="100%" />
     </td>
-    <td width="40%" valign="top" align="center">
+    <td width="50%" valign="top" align="center">
       <p align="left"><strong>🎼 Now Playing (Last.fm)</strong></p>
       <img src="./metrics.music.svg" alt="Recently Played Music" width="100%" />
     </td>
