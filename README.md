@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/emkafie/emkafie/main/assets/header-3d.svg" alt="emkafie // Neoclassic 3D Architecture Header" width="100%" />
+  <img src="./assets/header-3d.svg" alt="emkafie // Neoclassic 3D Architecture Header" width="100%" />
 </p>
 
 ---
