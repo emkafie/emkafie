@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" width="100%" height="100%">
   <defs>
-    <!-- GitHub-safe CSS (No external @import, standard system fallbacks) -->
-    <style>
+    <!-- GitHub-safe CSS wrapped in CDATA -->
+    <style><![CDATA[
       .font-display {
         font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
       }
@@ -13,7 +13,7 @@
         font-variant-numeric: tabular-nums;
       }
 
-      /* 3D Celestial & Axonometric Motion */
+      /* 3D Celestial and Axonometric Motion */
       @keyframes armillary-spin-1 {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
@@ -50,7 +50,7 @@
       .live-dot {
         animation: pulse-subtle 2.4s ease-in-out infinite;
       }
-    </style>
+    ]]></style>
 
     <!-- Bronze Architectural Gradients -->
     <linearGradient id="bronze-line" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -76,7 +76,7 @@
   </defs>
 
   <!-- ============================================================= -->
-  <!-- FOUNDATION: MARBLE & LEDGER CHARCOAL SHELL (2px RADIUS)       -->
+  <!-- FOUNDATION: MARBLE and LEDGER CHARCOAL SHELL (2px RADIUS)     -->
   <!-- ============================================================= -->
   <rect x="1" y="1" width="918" height="278" rx="2" fill="#15141A" stroke="#B08D57" stroke-opacity="0.35" stroke-width="1"/>
   
@@ -100,7 +100,7 @@
   <line x1="570" y1="10" x2="570" y2="270" stroke="#B08D57" stroke-opacity="0.25" stroke-width="1"/>
 
   <!-- ============================================================= -->
-  <!-- LEFT COLUMN: EDITORIAL & LEDGER HIERARCHY                     -->
+  <!-- LEFT COLUMN: EDITORIAL and LEDGER HIERARCHY                   -->
   <!-- ============================================================= -->
   <g transform="translate(38, 30)">
     
@@ -192,7 +192,7 @@
   </g>
 
   <!-- ============================================================= -->
-  <!-- RIGHT COLUMN: 3D AXONOMETRIC ARMILLARY & POLYHEDRON           -->
+  <!-- RIGHT COLUMN: 3D AXONOMETRIC ARMILLARY and POLYHEDRON         -->
   <!-- ============================================================= -->
   
   <!-- Architectural Figure Label (Top Right) -->
@@ -266,7 +266,7 @@
       <line x1="680" y1="128" x2="750" y2="168" stroke="#B08D57" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="3 3"/>
       <line x1="680" y1="168" x2="750" y2="128" stroke="#B08D57" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="3 3"/>
 
-      <!-- Precision Vertices (Crisp Bronze & Ivory Nodes) -->
+      <!-- Precision Vertices (Crisp Bronze and Ivory Nodes) -->
       <circle cx="715" cy="108" r="3" fill="#F5F1E8" stroke="#B08D57" stroke-width="1"/>
       <circle cx="680" cy="128" r="2.5" fill="#B08D57"/>
       <circle cx="750" cy="128" r="2.5" fill="#B08D57"/>
